@@ -1,0 +1,224 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@100;200;400;600&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: 'Barlow Condensed', sans-serif;
+    background-color: #f6f646f2;
+    color: black;
+    transition: all 0.4s;
+}
+
+.eclipse{
+    position: absolute;
+    background: #f1aa5a70;
+    opacity: 0.80;
+    filter: blur(70px); 
+    width: 280px;
+    height: 280px;
+    margin-top: -101px;
+    margin-left: -79px;
+    border-radius: 50%;
+    transition: all 0.3s;
+}
+
+.homeScreen{
+    display: grid;
+    justify-content: center;
+    margin-top: 50%;
+}
+
+.bi-exclamation-octagon{
+    font-size: 140px;   
+    color: #d4d443;
+    margin: auto;
+    transition: all 0.3s;
+}
+.homeScreen p{
+    font-size: 25px;
+    text-align: center;
+}
+.homeScreen p:nth-child(3){
+    color: rgba(0, 0, 0, 0.474);
+    font-size: 18px;
+    transition: all 0.3s;
+}
+
+main{
+    max-width: 340px;
+    margin: auto;
+    margin-top: 40px;
+    position: relative;
+}
+
+header{
+    margin-top: -10px;
+    display: flex;
+    align-items: center;
+}
+
+header div{
+    padding: 10px 18px;
+    display: flex;
+    border-radius: 40px;
+    background-color: #eaea28d6;
+    transition: all 0.4s;
+    box-shadow: 1px 5px 20px 2px #0a0a0b1f;
+}
+
+input{
+    background-color: transparent;
+    border: none;
+    font-size: 12px;
+}
+input:focus{
+    outline: none;
+}
+input::placeholder{
+    color: rgba(0, 0, 0, 0.474);
+}
+
+button{
+    background-color: transparent;
+    border: none;
+    outline: none;
+}
+.bx-search{
+    font-size: 17px;
+    font-weight: 700;
+    cursor: pointer;
+    color: rgba(0, 0, 0, 0.474);
+    transition: all 0.3s;
+}
+.bx-search:hover{
+    color: black;
+}
+
+.bi-sun, .bi-moon{
+    border-radius: 5px;
+    margin-left: 115px;
+    font-size: 19px;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.content{
+    margin-top: 70px;
+
+}
+
+.cidade{
+    display: flex;
+    justify-content: center;
+    gap: 6px;
+}
+
+.content p{
+    text-align: center;
+    
+}
+
+.imagem{
+    display: flex;
+    justify-content: center;
+}
+
+.imagem img{
+    width: 100px;
+}
+
+.temperatura p {
+    font-size: 100px;
+    font-weight: 700;
+}
+.temperatura p:nth-child(2){
+    font-size: 18px;
+    font-weight: 400;
+    letter-spacing: 0.8px;
+}
+
+article{
+    margin-top: 40px;
+    background-color: #eaea28d6;
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    padding: 12px 0px;
+    border-radius: 10px;
+    transition: all 0.4s;
+    box-shadow: 1px 5px 20px 2px #0a0a0b1f;
+}
+
+.bi-wind, .bi-droplet, .bi-thermometer-sun, .bi-thermometer-snow{
+    font-size: 20px;
+    margin-bottom: 5px;
+}
+article p {
+    font-size: 12px;
+}
+article span {
+    font-size: 11px;
+    font-weight: 400;
+}
+
+.bi-wind, .bi-droplet,
+.bi-thermometer-sun, .bi-thermometer-snow, span,
+#wind, #umidity, #tempMin, #tempMax{
+    padding: 2px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/*DARK MODE*/
+input[type="checkbox"] {
+  display: none;
+}
+
+.dark {
+    background-color: #080338;
+    color: #fff;
+}
+
+.dark .eclipse{
+    background: #46426cb0;
+}
+
+.dark header div, .dark article{
+    background-color: #2b284bd6;
+    box-shadow: 1px 5px 20px 2px #0c0c0e73;
+
+}
+
+.dark input{
+    color: white;
+}
+.dark input::placeholder, .dark .bx-search{
+    color: #ffffff82;
+    transition: all 0.3s;
+}
+.dark .bx-search:hover{
+    color: rgba(255, 255, 255, 0.836);
+}
+
+.bi-moon {
+  display: none;
+}
+
+.dark .bi-sun {
+  display: none;
+}
+
+.dark .bi-moon {
+  display: block;
+}
+
+.dark .homeScreen p:nth-child(3){
+    color: #ffffff82;
+}
+.dark .bi-exclamation-octagon{
+    color: #2e2a4fd9;
+}
