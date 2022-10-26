@@ -1,11 +1,10 @@
 <h1 align="center"> APP CLIMA TEMPO </h1>
 
-<hr>
 <br>
 
-<div style="display: flex; gap:10px">
-    <img width="55%" src=".github/previewClear.png">
-    <img width="55%" src=".github/previewDark.png">
+<div align="center" style="display: flex;">
+    <img width="40%" src=".github/previewClear.png">
+    <img width="40%" src=".github/previewDark.png">
 </div>
 
 
@@ -38,7 +37,7 @@ git clone https://github.com/paulopariz/app-clima-tempo.git
 ```
 
 ## CONTATO
-- paulopariz@gmail.com
+paulopariz@gmail.com
 <br>
-- <a href="https://www.instagram.com/parizpaulo_">parizpaulo_</a>
+<a href="https://www.instagram.com/parizpaulo_">parizpaulo_</a>
 
