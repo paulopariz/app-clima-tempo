@@ -50,12 +50,11 @@ body{
 main{
     max-width: 340px;
     margin: auto;
-    margin-top: 40px;
+    margin-top: 45px;
     position: relative;
 }
 
 header{
-    margin-top: -10px;
     display: flex;
     align-items: center;
 }
@@ -107,7 +106,6 @@ button{
 
 .content{
     margin-top: 70px;
-
 }
 
 .cidade{
@@ -118,16 +116,11 @@ button{
 
 .content p{
     text-align: center;
-    
 }
 
 .imagem{
     display: flex;
     justify-content: center;
-}
-
-.imagem img{
-    width: 100px;
 }
 
 .temperatura p {
@@ -190,7 +183,6 @@ input[type="checkbox"] {
 .dark header div, .dark article{
     background-color: #2b284bd6;
     box-shadow: 1px 5px 20px 2px #0c0c0e73;
-
 }
 
 .dark input{
